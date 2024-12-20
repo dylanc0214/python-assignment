@@ -1,1 +1,1 @@
-# python-assignment
+# Education Management System
