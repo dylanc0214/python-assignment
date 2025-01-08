@@ -118,7 +118,6 @@ def course_management():
         course_id = input("Enter Course ID: ")
         updated_name = input("Enter Updated Name: ")
         updated_instructor = input("Enter Updated Instructor Name: ")
-
         # ChatGPT (Investigate Later On)
         # with open("courses.txt", "r") as file:
         #     lines = file.readlines()
@@ -129,6 +128,8 @@ def course_management():
         #         else:
         #             file.write(line)
         # print("Course updated successfully.")
+        return True
+
     elif choice == 5:
         main_menu()
     else:
@@ -150,6 +151,8 @@ def student_enrolment():
         # with open("enrollments.txt", "a") as file:
         #     file.write(f"{student_id},{course_id}\n")
         # print("Student enrolled successfully.")
+        return True
+
     elif chocie == 2:
         student_id = input("Enter student ID: ")
         course_id = input("Enter course ID: ")
@@ -162,6 +165,8 @@ def student_enrolment():
         #         if line.strip() != f"{student_id},{course_id}":
         #             file.write(line)
         # print("Student removed successfully.")
+        return True
+
     elif choice == 3:
         main_menu()
     else:
@@ -182,6 +187,8 @@ def grade_assessment():
         # with open("grades.txt", "a") as file:
         #     file.write(f"{student_id},{course_id},{grade}\n")
         # print("Grades recorded successfully.")
+        return True
+
     elif choice == 2:
         main_menu()
     else:
