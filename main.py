@@ -99,21 +99,93 @@ def course_management():
     print("2. Update an Existing Course")
     print("3. Delete a Course")
     print("4. View All Courses")
-    print("5. Back to Teacher Menu")
+    print("5. Back to Main Menu")
 
     # Enter the choice
     choice = int(input("Enter your choice: "))
 
     # Create Course
     if choice == 1:
-        print("Not Done Yet")
+        course_name = input("Enter Course Name: ")
+        course_id = input("Enter Course ID: ")
+        instructor = input("Enter Instructor Name: ")
 
+        # ChatGPT (Investigate Later On
+        # with open("courses.txt", "a") as file:
+        #     file.write(f"{course_id},{course_name},{instructor}\n")
+        # print("Course created successfully.")
+    elif choice == 2:
+        course_id = input("Enter Course ID: ")
+        updated_name = input("Enter Updated Name: ")
+        updated_instructor = input("Enter Updated Instructor Name: ")
+
+        # ChatGPT (Investigate Later On)
+        # with open("courses.txt", "r") as file:
+        #     lines = file.readlines()
+        # with open("courses.txt", "w") as file:
+        #     for line in lines:
+        #         if line.startswith(course_id + ","):
+        #             file.write(f"{course_id},{updated_name},{updated_instructor}\n")
+        #         else:
+        #             file.write(line)
+        # print("Course updated successfully.")
+    elif choice == 5:
+        main_menu()
+    else:
+        print("Invalid choice")
 # Student Enrolment Menu
 def student_enrolment():
-    print("-----Student Enrollment Menu-----")
+    print("-----Student Enrolment Menu-----")
+    print("1. Enrol a student")
+    print("2. Remove a student")
+    print("3. Back to Main Menu")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        student_id = input("Enter student ID: ")
+        course_id = input("Enter course ID: ")
+
+        # ChatGPT (Investigate Later On)
+        # with open("enrollments.txt", "a") as file:
+        #     file.write(f"{student_id},{course_id}\n")
+        # print("Student enrolled successfully.")
+    elif chocie == 2:
+        student_id = input("Enter student ID: ")
+        course_id = input("Enter course ID: ")
+
+        # ChatGPT (Investigate Later On)
+        # with open("enrollments.txt", "r") as file:
+        #     lines = file.readlines()
+        # with open("enrollments.txt", "w") as file:
+        #     for line in lines:
+        #         if line.strip() != f"{student_id},{course_id}":
+        #             file.write(line)
+        # print("Student removed successfully.")
+    elif choice == 3:
+        main_menu()
+    else:
+        print("Invalid choice")
 # Grading and Assessment
 def grade_assessment():
     print("-----Grade Assessment Menu-----")
+    print("1. Grade a student")
+    print("2. Back to Main Menu")
+
+    choice = int(input("Enter your choice: "))
+    if choice == 1:
+        student_id = input("Enter student ID: ")
+        course_id = input("Enter course ID: ")
+        grade = input("Enter grade: ")
+
+        # ChatGPT (Investigate Later On)
+        # with open("grades.txt", "a") as file:
+        #     file.write(f"{student_id},{course_id},{grade}\n")
+        # print("Grades recorded successfully.")
+    elif choice == 2:
+        main_menu()
+    else:
+        print("Invalid choice")
 # Attendance Tracking
 def attendance_tracking():
     print("-----Attendance Tracking Menu-----")
@@ -130,5 +202,3 @@ def admin_menu():
 
 # Start the program
 main_menu()
-ababsbscnuiaasd
-asda
